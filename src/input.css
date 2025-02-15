@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+    --color-purple: hsl(259, 100%, 65%);
+    --color-lightRed: hsl(0, 100%, 67%);
+    --color-offWhite: hsl(0, 0%, 94%);
+    --color-lightGrey: hsl(0, 1%, 44%);
+    --color-smokeyGrey: hsl(0, 1%, 44%);
+    --color-offBlack: hsl(0, 0%, 8%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
