@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Age Calculator App</title>
+</head>
+
+<body class="bg-offWhite h-full md:h-screen flex justify-center pt-22 md:pt-0 md:items-center md:px-60">
+    <div class="px-6 md:p-12 bg-white w-[93%] rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl rounded-br-[115px] md:w-full">
+        <form class="flex gap-5 pt-10 md:mr-34 md:pt-0">
+            <div class="flex-1 flex flex-col">
+                <label for="day-input" class="mb-1 text-sm text-smokeyGrey font-bold uppercase tracking-wider">Day</label>
+                <input type="number" class="focus:border-purple focus:outline-none focus:ring-0 rounded-lg text-[32px] font-bold w-full pt-3 pr-5 pb-3 pl-3 border border-offWhite " id="day-input" placeholder="DD">
+                <p class="text-lightRed italic text-[10px] mt-2"></p>
+            </div>
+            <div class="flex-1 flex flex-col">
+                <label for="month-input" class="mb-1 text-sm text-smokeyGrey font-bold tracking-wider uppercase">Month</label>
+                <input type="number" class="focus:border-purple focus:outline-none focus:ring-0 text-[32px] rounded-lg font-bold pt-3 pr-5 pb-3 pl-3 w-full border border-offWhite" id="month-input" placeholder="MM">
+                <p class="text-lightRed italic text-[10px] mt-2"></p>
+            </div>
+            <div class="flex-1 flex flex-col">
+                <label for="year-input" class="mb-1 uppercase text-sm text-smokeyGrey font-bold tracking-wider">Year</label>
+                <input type="number" class="focus:border-purple focus:outline-none focus:ring-0 text-[32px] rounded-lg font-bold pt-3 pr-3 pb-3 pl-3 w-full border border-offWhite placeholder:text-[30px]" id="year-input" placeholder="YYYY">
+                <p class="text-lightRed italic text-[10px] mt-2"></p>
+            </div>
+        </form>  
+
+        <div class="mt-16 relative md:flex md:static md:justify-between md:items-center">
+            <hr class="w-full flex-1 md:w-auto border-t-1 border-offWhite">
+            <div class="absolute -top-8 left-1/2 -translate-x-1/2 md:top-0 md:relative md:left-0 md:-translate-x-0">
+                <button class="rounded-full bg-purple p-5 inline-flex items-center justify-center md:hover:cursor-pointer" id="submit-button">
+                    <img src="images/icon-arrow.svg" alt="icon-arrow"  class="w-6 h-6 stroke-[10px]">
+                </button>
+            </div>    
+        </div>
+
+        <div class="md:mt-0 md:p-0 text-6xl md:text-8xl py-18 flex flex-col font-bold gap-2 italic">
+            <p class="text-black"><span class="mr-3 text-purple" id="years-display">--</span>years</p>
+            <p class="text-black"><span class="mr-3 text-purple" id="months-display">--</span>months</p>
+            <p class="text-black"><span class="mr-3 text-purple" id="days-display">--</span>days</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
