@@ -10,7 +10,7 @@
     "tailwind": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
     "build": "tailwindcss -i src/input.css -o src/output.css --minify",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d src"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
